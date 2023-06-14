@@ -392,5 +392,29 @@ video {
 
 
 
+.container {
+  width: 100%;
+  max-width: 1200px; /* Adjust the max-width as per your needs */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+
+
 
 
