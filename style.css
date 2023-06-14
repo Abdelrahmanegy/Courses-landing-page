@@ -1,5 +1,5 @@
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #f8f3ef;
 }
 
@@ -113,6 +113,8 @@ header  a{
     color: #000;
 }
 
+/* making the navigation responsive  */
+
 @media (max-width: 639px){
     .navigation-bar{
         display: flex;
@@ -150,7 +152,7 @@ header  a{
 
 
 .hero-section .hero-content h1{
-    font-size: clamp(2rem,4.6rem,5rem);
+    font-size: clamp(1rem,4.6rem,5rem);
 }
 
 
@@ -302,15 +304,20 @@ header  a{
     .hero-section .hero-img {
         position: relative;
         height: 100%;
-        top: 5rem;
-        bottom: 0;
+        
+        top: 2rem;
         margin-left: 4rem;
        
     }
 
+    .hero-section .hero-img img{
+        width: 20rem;
+        height: 23rem;
+    }
+
     .hero-img-container  .review-2 {
-        top: 30rem;
-        left: 10rem;
+        top: 23rem;
+        left: 9rem;
     }
 
     /* responsive email */
@@ -327,9 +334,176 @@ header  a{
         border-bottom-left-radius: 9999px;
          position: relative;   /*making the input element clicKable on small screens */
     }
+
+    .hero-section .hero-content .hero-email input::placeholder{
+        font-size: 0.8rem;
+    }
+
+
+    .hero-section .hero-content .hero-email span{
+        padding: 1rem 1rem;
+    }
+
+    
+      /* adjusting the hero section padding */
+
+      .hero-section .hero-content{
+        padding-top: 9rem ;
+        padding-left: 3rem;
+        
+    }
+
+    
   
     
 }
+
+
+
+/* numbers section */
+
+.numbers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+}
+
+
+.numbers .numbers-item h1{
+    font-size: 2rem;
+
+}
+
+.numbers .numbers-item  p{
+    color:#636363 ;
+    font-size: 1.2rem;
+}
+
+/* making the numbers section responsive */
+
+@media (max-width: 639px) {
+    .numbers{
+        flex-direction: column;
+        align-content: center;
+       
+        
+    }
+}
+
+
+/* popular courses section */
+.Popular-courses{
+    margin-top: 7rem;
+}
+.Popular-courses > h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+
+.Courses-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.Courses-section .course-card{
+    background-color: #fef9f8;
+    max-width: 20rem;
+    padding: 0.7rem;
+    border-radius: 0.6rem;
+    border: 2px solid #000;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.Courses-section .course-card img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.Courses-section .course-card img:hover{
+    transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+.Courses-section .course-card h1{
+    font-size: 1.2rem;
+    padding: 0.6rem 1rem 0.6rem 1rem;
+}
+
+
+.Courses-section .course-card p{
+    padding: 0.6rem 1rem 0.6rem 1rem;
+    color: #636363;
+}
+
+
+.Courses-section .course-card .star-rating{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.Courses-section .course-card .star-rating .stars{
+    padding-right: 1.5rem;
+}
+
+.Courses-section .course-card .star-rating  span:first-child{
+    padding-right: 0.5rem;
+    font-weight: 700;
+}
+
+
+.Courses-section .course-card .star-rating  span:nth-child(2){
+    color: #636363 ;
+}
+
+.Courses-section .course-card .star-rating i.fas{
+    color: #ffd500;
+}
+
+.Courses-section .course-card .price-element{
+    padding: 1rem;
+}
+
+.course-card .price-element .price{
+    padding-right: 1rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+
+}
+
+.course-card .price-element .discount{
+    color: #636363;
+}
+
+/* making popular courses section responsive */
+
+
+@media (max-width: 639px){
+    .Courses-section{
+        flex-direction: column;
+       align-items: center;
+
+    }
+    .Courses-section .course-card{
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+
+
 
 
 
