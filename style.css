@@ -604,6 +604,7 @@ header  a{
     max-width: 90rem;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
   }
 
   .Categories .Cat-container .cat-content h1{
@@ -662,6 +663,112 @@ header  a{
 
    
   }
+
+/* Creating Mentors Section   */
+
+ .Mentors{
+    margin-top: 7rem;
+    
+ }
+
+ .Mentors .m-cards{
+    max-width: 90rem;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc(100% / 4);
+    column-gap: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ .Mentors > h1{
+    text-align: center;
+    font-size: 3rem;
+ }
+
+
+.Mentors .mentorCard {
+    margin-top: 3rem;
+    background-color: #ffffff;
+    max-width: 22rem;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+
+.Mentors .mentorCard  .mentor-content img{
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    outline: 1px solid #000;
+    margin-bottom: 1rem;
+}
+
+
+.Mentors .mentorCard  .mentor-content{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.Mentors .mentorCard  .mentor-content h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.Mentors .mentorCard  .mentor-content p{
+    font-size: 1.2rem;
+    color: #494a4a;
+}
+
+
+.Mentors .m-reviews {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.Mentors .m-reviews span:nth-child(1){
+    font-weight: 700;
+    margin-right: 0.6rem;
+}
+
+.Mentors .m-reviews .m-rating{
+    color: #ffd501;
+}
+
+
+.Mentors .m-reviews .s-numbers {
+    color: #494a4a;
+}
+
+.Mentors .arrow-buttons{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    
+}
+
+
+.Mentors .arrow-buttons button{
+    margin-left: 1rem;
+    color: #fff;
+    background-color: #000;
+    
+    padding: 0.8rem 1rem;
+    border-radius: 50%;
+}
+
+
+
 
 
 
