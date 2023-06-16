@@ -519,9 +519,11 @@ header  a{
     margin-top: 8rem;
     padding: 2rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #fef9f8;
-    
+    max-width: 80rem;
+    margin-left: auto;  
+    margin-right: auto; 
 }
 
 .features .feature img{
@@ -579,8 +581,94 @@ header  a{
     }
   }
 
+  /* Categories section */
+   
+  .Categories > h1{
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .Categories .Cat-container img{
+    width: 4rem;
+    position: relative;
+    top: -1.5rem;
+  }
+
+
+  .Categories .Cat-container{
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Categories .Cat-container .cat-content h1{
+    padding: 3rem 7rem;
+    font-size: 1.5rem;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    box-shadow: 0.5px 1px 0 0.2px #1b1f24;
+  }
+
+  .Categories .Cat-container .cat-content:nth-child(1) h1{
+      background-color: #d2b6ff ;
+      
+  }
+  
+  
+
+  .Categories .Cat-container .cat-content:nth-child(2) h1{
+     background-color: #aac5fe;
+  }
+
+
+  .Categories .Cat-container .cat-content:nth-child(3) h1{
+    background-color: #ffbaab;
+  }
+
+
+  .Categories .Cat-container .cat-content:nth-child(4) h1{
+    background-color:#ffea9f
+  }
+
+
+  .Categories .Cat-container .cat-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* making the categories section responsive */
+
+  @media (max-width: 639px) {
+    /* CSS code for small screens */
+    .Categories .Cat-container{
+        flex-direction: column;
+    }
+  }
+
+  @media (min-width: 639px) and (max-width: 1023px){
+
+    .Categories .Cat-container .cat-content h1{
+        padding: 2rem 5rem;
+        
+       
+       
+    }
+
+   
+  }
+
+
 
   
+
+
+
 
 
 
