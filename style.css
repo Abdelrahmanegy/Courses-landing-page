@@ -139,6 +139,7 @@ header  a{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 45rem;
     justify-items: center;
+      max-width: 120rem;  
     
 }
 
@@ -392,6 +393,12 @@ header  a{
        
         
     }
+
+    .numbers-item{
+        margin-bottom: 2rem;
+        margin-left: 3rem;
+
+    }
 }
 
 
@@ -416,6 +423,7 @@ header  a{
    
 }
 .Courses-section .course-card{
+    
     background-color: #fef9f8;
     max-width: 20rem;
     padding: 0.7rem;
@@ -425,15 +433,18 @@ header  a{
     margin-bottom: 2rem;
 }
 
-.Courses-section .course-card img{
+.Courses-section .course-card img{  
     width: 100%;
-    border-radius: 1rem;
+    border-radius: 1rem;    
+    
 }
 
-.Courses-section .course-card img:hover{
-    transform: scale(1.05);
-  transition: transform 0.2s ease;
-}
+
+
+
+
+
+ 
 
 .Courses-section .course-card h1{
     font-size: 1.2rem;
@@ -499,6 +510,78 @@ header  a{
         margin-bottom: 1rem;
     }
 }
+
+
+
+/* Featurs section */
+
+.features {
+    margin-top: 8rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fef9f8;
+    
+}
+
+.features .feature img{
+    width: 4rem;
+    margin-right: 1rem;
+}
+
+
+.features .feature {
+    display: flex;
+    align-items: center;
+}
+
+.features .feature h1{
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+.features .feature p{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* making feature section responsive */
+
+
+@media (max-width: 639px) {
+    /* CSS code for small screens */
+    .features{
+        flex-direction: column;
+        align-items: flex-start;
+       
+    }
+
+    .features .feature{
+        margin-bottom: 4rem;
+        margin-left: 3rem;
+    }
+
+
+  }
+
+  @media (min-width: 639px)   and (max-width:973px){
+    .features .feature h1{
+        font-size: 1.1rem;
+       
+    }
+
+    .features .feature p{
+        font-size: 1rem;
+        
+    }
+  }
+
+
+  
+
 
 
 
