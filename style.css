@@ -810,6 +810,7 @@ header  a{
     column-gap: 1.5rem;
     grid-auto-columns:  calc((100% / 2) - 12px);;
     overflow: hidden;
+    scroll-behavior: smooth;
     max-width: 75rem;
     margin-left:auto ;
     margin-right: auto;
@@ -865,6 +866,10 @@ header  a{
 .Testimonials .T-card .card-img .girl-img{
     object-position: 0 -10px;
  }
+
+  .Testimonials .T-card .card-img .girl-img-2{
+    object-position: 0 1px; 
+} 
 
  .T-card  .card-desc{
     margin-top: 1rem;

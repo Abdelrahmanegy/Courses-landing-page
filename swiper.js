@@ -3,7 +3,7 @@ class SwipeCarousel {
       this.carousel = document.querySelector(carouselSelector);
       this.cards = document.querySelector(cardSelector);
       this.buttons = document.querySelectorAll(buttonSelectors);
-      this.cardWidth = this.cards.clientWidth + 20;
+      this.cardWidth = this.cards.clientWidth + 28;
       this.startX = 0;
       this.initialScrollLeft = 0;
   
@@ -35,10 +35,12 @@ class SwipeCarousel {
     }
   
     handleButtonClick(btn) {
-      const scrollDistance = btn.id === "left" ? -this.cardWidth : this.cardWidth;
+      const carouselWidth = this.carousel.offsetWidth + 24; 
+      const scrollDistance = btn.id === "left" ? -carouselWidth : carouselWidth;
       this.carousel.scrollLeft += scrollDistance;
+      
     }
   }
 
   
-//   const mySwipeCarousel = new SwipeCarousel(".m-cards", ".mentorCard", ".btn");  
+   const testimonilasSwiper = new SwipeCarousel(".card-wrapper",".T-card",".T-btn");  

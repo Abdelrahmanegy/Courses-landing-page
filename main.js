@@ -1,7 +1,7 @@
 const carouselContainer = document.querySelector(".m-cards");
 const cardContainer = document.querySelector(".mentorCard");
 const buttons = document.querySelectorAll(".btn");
-const cardWidth = cardContainer.clientWidth + 20;
+const cardWidth = cardContainer.offsetWidth + 16;
 let startX = 0;
 let initialScrollLeft = 0;
 
@@ -35,6 +35,10 @@ function handleTouchStart(e) {
       handleButtonClick(btn);
     });
   });
+
+
+
+// Creating the Testimonilas swiper
 
 
 
