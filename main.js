@@ -22,7 +22,8 @@ function handleTouchStart(e) {
   
   
   function handleButtonClick(btn) {
-    const scrollDistance = btn.id === "left" ? -cardWidth : cardWidth;
+    caroselWidth = carouselContainer.offsetWidth + 16;
+    const scrollDistance = btn.id === "left" ? -caroselWidth : caroselWidth;
     carouselContainer.scrollLeft += scrollDistance;
   }
 
