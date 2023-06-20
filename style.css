@@ -1047,11 +1047,13 @@ header  a{
     
 }
 
-.b-btn {
-    margin-top: 3rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;  
+.readmore  {
+    text-align: center;
+}
+
+.readmore .b-btn{
+    margin-top: 3rem; 
+    display: inline-block;
     background-color: #000;
     color: #fff;
     padding: 1rem 2.5rem;
@@ -1071,6 +1073,157 @@ header  a{
     .blog-card{
         max-width: 30rem;
         margin-bottom: 2rem;
+    }
+}
+
+
+/* Footer */
+
+.footer{
+    margin-top: 10rem;
+    background-color: #eeeae7;
+    
+}
+
+.footer .footer-wrapper{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    max-width: 110rem;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 2rem;
+    
+}
+
+.footer .f-nav{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+}
+
+/* the first column */
+
+
+.footer .col{
+    
+    justify-self: center;
+}
+.footer .col h1{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer .col .phone {
+    padding-bottom: 0.5rem;
+}
+
+.footer .col .email  {
+    
+    margin-bottom: 2rem;
+}
+
+.footer .col .email i.fas{
+    padding-right: 0.4rem;
+}
+.footer .col .phone i.fas{
+    padding-right: 0.4rem;
+}
+
+.footer .col .email span:nth-child(2){
+    color: #494a4a;
+}
+
+.footer .col .phone span:nth-child(2){
+    color: #494a4a;
+}
+
+
+.footer .col .socials i.fab{
+   font-size: 1.5rem;
+   padding-right: 0.3rem;
+}
+
+
+/* the second column */
+
+
+
+.footer .f-nav h1{
+    margin-bottom: 1rem;
+}
+
+.footer .f-nav  li{
+   color: #494a4a;
+   margin-bottom: 1rem;
+}
+
+
+/* the third column */
+.Subscribe{
+    padding-left: 2rem;
+    justify-self: center;
+
+}
+.Subscribe h1{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.Subscribe input{
+    display: block;
+    padding: 1rem 3rem;
+    outline: none;
+    border-radius: 9999px;
+    border: 1px solid #000;
+    margin-bottom: 0.5rem;
+}
+
+.Subscribe a{
+    display: block;
+    text-align: center;
+    max-width: 18rem;
+    background-color: #000;
+    padding: 1rem 3rem;
+    color: #fff;
+    border-radius: 9999px;
+    
+}
+
+/* Making the footer responsive */
+
+@media (max-width: 1120px){
+    .footer .footer-wrapper{
+        
+        grid-template-columns: auto;
+    }
+
+    .footer .col{
+        margin-bottom: 1rem;
+    }
+
+
+
+    .footer .f-nav{
+        justify-items: center;
+    }
+}
+
+
+@media (max-width: 630px){
+    .footer .f-nav{
+        grid-template-columns: auto;
+        align-items: center;
+    }
+
+    .footer .f-nav div:nth-child(3){
+        margin-left: 2rem;
+    }
+
+    .footer .col{
+         margin-left: 4rem;
+        margin-bottom: 1rem; 
+        
     }
 }
 

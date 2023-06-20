@@ -39,7 +39,7 @@ function handleTouchStart(e) {
 
 
 
-// Creating the Testimonilas swiper
+
 
 
 
