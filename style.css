@@ -383,7 +383,7 @@ header  a{
 .numbers{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 75rem;
     margin-left: auto;
     margin-right: auto;
@@ -417,6 +417,11 @@ header  a{
 
     }
 }
+
+
+
+
+
 
 
 /* popular courses section */
@@ -1237,6 +1242,13 @@ header  a{
         margin-bottom: 1rem; 
         
     }
+}
+
+
+/* copyright */
+.copyright {
+    text-align: center;
+    color: #494a4a;
 }
 
  
