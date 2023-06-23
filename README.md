@@ -20,5 +20,7 @@ Responsive courses landing page
 ![mobile-view](https://github.com/Abdelrahmanegy/Courses-landing-page/assets/105970352/9e7ad591-1b5c-4ea7-9f2a-7814e82a2d1e)
 
 
+<strong>Contact me at</strong> : abdelrahamansamer71@gmail.com <br>
+<strong>Support my work</strong> : paypal.me/abdelrahmansamer835
 
 
