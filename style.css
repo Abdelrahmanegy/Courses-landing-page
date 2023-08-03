@@ -627,6 +627,7 @@ header  a{
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
+   
   }
 
   .Categories .Cat-container .cat-content h1{
@@ -675,6 +676,11 @@ header  a{
   }
 
   @media (min-width: 639px) and (max-width: 1023px){
+
+    .Categories .Cat-container{
+        padding: 1rem;
+        justify-content: space-around;
+    }
 
     .Categories .Cat-container .cat-content h1{
         padding: 2rem 5rem;
