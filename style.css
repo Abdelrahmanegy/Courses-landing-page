@@ -622,12 +622,13 @@ header  a{
     margin-top: 4rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 90rem;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
-   
+    padding: 1rem;
+    
   }
 
   .Categories .Cat-container .cat-content h1{
